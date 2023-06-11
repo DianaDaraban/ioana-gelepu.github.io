@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'DIN Next LT Pro';
+  src: url('DINNextLTPro-LightCondensed.eot');
+  src: local('DIN Next LT Pro Light Condensed'),
+    local('DINNextLTPro-LightCondensed'),
+    url('DINNextLTPro-LightCondensed.eot?#iefix') format('embedded-opentype'),
+    url('DINNextLTPro-LightCondensed.woff2') format('woff2'),
+    url('DINNextLTPro-LightCondensed.woff') format('woff'),
+    url('DINNextLTPro-LightCondensed.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Next LT Pro';
+  src: url('DINNextLTPro-MediumCond.eot');
+  src: local('DIN Next LT Pro Medium Condensed'),
+    local('DINNextLTPro-MediumCond'),
+    url('DINNextLTPro-MediumCond.eot?#iefix') format('embedded-opentype'),
+    url('DINNextLTPro-MediumCond.woff2') format('woff2'),
+    url('DINNextLTPro-MediumCond.woff') format('woff'),
+    url('DINNextLTPro-MediumCond.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --YELLOW: #f9b303;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.main-container {
+  background-color: black;
+  width: 100vw;
+  min-height: 150vh;
+  height: max-content;
+  display: flex;
+  position: relative;
+}
+
+.logo-background {
+  top: 480px;
+  width: 690px;
+  position: absolute;
+}
+
+.contact-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-size: 1.55rem;
+}
+
+.contact-list > li {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5em;
+  width: 100%;
+}
+
+.contact-list li div:nth-child(2) {
+  width: 95%;
+}
+
+.contact-list li:first-child div:nth-child(2) {
+  width: max-content;
+  border-bottom: solid 1px #085cf2;
+}

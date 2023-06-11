@@ -1,0 +1,175 @@
+@media screen and (max-width: 1550px) {
+  .nav-list li {
+    font-size: 1.6rem;
+  }
+  .nav-subText {
+    font-size: 0.9rem;
+  }
+  .active-link {
+    margin-top: 0.2em;
+  }
+  .line-nav {
+    height: 50px;
+  }
+  .active-link {
+    height: 16px;
+  }
+  nav {
+    top: 470px;
+  }
+
+  .text-container {
+    margin-top: 13em;
+  }
+
+  .title-experience {
+    font-size: 2.2rem;
+  }
+
+  .text-description-title {
+    font-size: 1.7rem;
+  }
+
+  .experience-list,
+  .experience-list2,
+  .contact-list {
+    font-size: 1.4rem;
+  }
+
+  .logo-background {
+    top: 450px;
+    width: 570px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  nav {
+    top: 430px;
+  }
+  .text-container {
+    margin-top: 10em;
+  }
+  .title-experience {
+    font-size: 2.1rem;
+  }
+  .text-description-title {
+    font-size: 1.5rem;
+  }
+  .experience-list,
+  .experience-list2,
+  .contact-list {
+    font-size: 1.3rem;
+  }
+
+  .logo-background {
+    top: 400px;
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .nav-list li {
+    font-size: 1.3rem;
+  }
+  .active-link {
+    margin-top: 0.2em;
+  }
+  .nav-subText {
+    font-size: 0.8rem;
+  }
+  .line-nav {
+    height: 40px;
+  }
+  .active-link {
+    height: 14px;
+  }
+  nav {
+    top: 360px;
+  }
+
+  .text-container {
+    margin-top: 5em;
+  }
+  .title-experience {
+    font-size: 2rem;
+  }
+  .text-description-title {
+    font-size: 1.3rem;
+  }
+  .experience-list,
+  .experience-list2,
+  .contact-list {
+    font-size: 1.2rem;
+  }
+
+  .logo-background {
+    top: 380px;
+    width: 490px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  nav {
+    top: 330px;
+  }
+
+  .text-container {
+    margin-top: 3em;
+  }
+  .title-experience {
+    font-size: 1.8rem;
+  }
+  .text-description-title {
+    font-size: 1.2rem;
+  }
+  .experience-list,
+  .experience-list2,
+  .contact-list {
+    font-size: 1.1rem;
+  }
+  .logo-background {
+    top: 360px;
+    width: 460px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .nav-list li {
+    font-size: 1rem;
+  }
+  .active-link {
+    margin-top: 0.5em;
+  }
+  .nav-subText {
+    font-size: 0.55rem;
+  }
+  .line-nav {
+    height: 35px;
+  }
+  .active-link {
+    height: 12px;
+  }
+  nav {
+    top: 300px;
+  }
+
+  .text-container {
+    margin-top: 0;
+  }
+
+  .title-experience {
+    font-size: 1.6rem;
+  }
+  .text-description-title {
+    font-size: 1.1rem;
+  }
+  .experience-list,
+  .experience-list2,
+  .contact-list {
+    font-size: 1rem;
+  }
+  .logo-background {
+    top: 330px;
+    width: 420px;
+  }
+}
