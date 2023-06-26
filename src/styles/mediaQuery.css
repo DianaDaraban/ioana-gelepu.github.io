@@ -19,15 +19,15 @@
   }
 
   .text-container {
-    margin-top: 13em;
+    margin-top: 10em;
   }
 
   .title-experience {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 
   .text-description-title {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .experience-list,
@@ -40,6 +40,17 @@
     top: 450px;
     width: 570px;
   }
+
+  .language-search-container {
+    top: 410px;
+  }
+
+  .english-btn,
+  .romanian-btn {
+    width: 1.3em;
+    height: 1.3em;
+    font-size: 1.4rem;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -48,6 +59,11 @@
   }
   .text-container {
     margin-top: 10em;
+    margin-left: 25em;
+  }
+
+  .language-search-container {
+    top: 380px;
   }
   .title-experience {
     font-size: 2.1rem;
@@ -68,6 +84,12 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .main-container {
+    min-height: 210vh;
+  }
+  .nav-list {
+    margin-top: 1em;
+  }
   .nav-list li {
     font-size: 1.3rem;
   }
@@ -88,7 +110,8 @@
   }
 
   .text-container {
-    margin-top: 5em;
+    margin-top: 7em;
+    margin-left: 22em;
   }
   .title-experience {
     font-size: 2rem;
@@ -106,6 +129,33 @@
     top: 380px;
     width: 490px;
   }
+
+  .language-search-container {
+    top: 330px;
+  }
+
+  .english-btn,
+  .romanian-btn {
+    width: 1.3em;
+    height: 1.3em;
+    font-size: 1.2rem;
+  }
+
+  .search-container {
+    width: 320px;
+  }
+  .search-input {
+    font-size: 1.2rem;
+  }
+
+  .search-btn {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .title-experience {
+    font-size: 1.7rem;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -114,7 +164,8 @@
   }
 
   .text-container {
-    margin-top: 3em;
+    margin-top: 7em;
+    margin-left: 20em;
   }
   .title-experience {
     font-size: 1.8rem;
@@ -130,6 +181,10 @@
   .logo-background {
     top: 360px;
     width: 460px;
+  }
+
+  .language-search-container {
+    top: 300px;
   }
 }
 
@@ -154,7 +209,8 @@
   }
 
   .text-container {
-    margin-top: 0;
+    margin-top: 6em;
+    margin-left: 19em;
   }
 
   .title-experience {
@@ -171,5 +227,469 @@
   .logo-background {
     top: 330px;
     width: 420px;
+  }
+
+  .language-search-container {
+    top: 275px;
+  }
+
+  .english-btn,
+  .romanian-btn {
+    width: 1.4em;
+    height: 1.4em;
+    font-size: 1rem;
+  }
+
+  .search-container {
+    width: 270px;
+  }
+  .search-input {
+    font-size: 1rem;
+  }
+
+  .search-btn {
+    width: 1.4em;
+    height: 1.4em;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .language-search-container {
+    top: 255px;
+  }
+  nav {
+    top: 285px;
+  }
+  .text-container {
+    margin-left: 17em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .text-container {
+    margin-left: 16em;
+    margin-top: 7em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .burger-container {
+    visibility: visible;
+    top: 0.5em;
+    left: 0.7em;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .logo {
+    transform: scale(0.5);
+    z-index: 10;
+    margin-top: 2.4%;
+  }
+
+  .banner-experience {
+    width: 100vw;
+    height: 18%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .banner-experience > img {
+    width: 125%;
+  }
+
+  .text-container {
+    position: absolute;
+    top: 100vh;
+    margin-top: 8em;
+    width: 100vw;
+    margin-left: 0;
+    padding: 0 3em 5em 3em;
+    background-color: black;
+  }
+
+  .logo-background {
+    top: 100vh;
+    margin-top: 10em;
+    z-index: 20;
+  }
+
+  .line-experience {
+    z-index: 21;
+  }
+
+  .title-experience {
+    z-index: 22;
+  }
+
+  .text-description-title {
+    z-index: 23;
+  }
+
+  .experience-list {
+    z-index: 24;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nav2 {
+    visibility: visible;
+    width: 100vw;
+    z-index: 15;
+    font-family: 'DIN Next LT Pro';
+    position: absolute;
+    top: 46px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-list2 {
+    width: 90%;
+    padding: 1em;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+    /* gap: 0.2em; */
+  }
+
+  .nav-list2 li {
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 0.3em;
+    padding: 0.3em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+
+  .nav-list2 li:hover {
+    background-color: var(--YELLOW);
+  }
+
+  .nav-btn2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.8em; */
+  }
+
+  .line-nav2 {
+    width: 100%;
+    background-color: hsl(0, 0%, 48%);
+    height: 1px;
+  }
+
+  .active-link {
+    height: 2px;
+    margin-top: 0;
+  }
+
+  .language-search-container {
+    /* position: absolute; */
+    top: 100vh;
+    margin-top: 4em;
+    margin-right: 1em;
+    right: 0;
+  }
+
+  .search-container {
+    order: 1;
+  }
+
+  .romanian-btn {
+    order: 2;
+    margin-left: 1em;
+  }
+
+  .english-btn {
+    order: 3;
+    margin-left: 0.2em;
+  }
+
+  .menu {
+    top: 4em;
+    margin-left: 2em;
+  }
+
+  .main-container {
+    height: 362vh;
+  }
+}
+
+/* MOBILE---------------------------------------------- */
+
+@media screen and (max-width: 760px) {
+  .main-container {
+    display: none;
+  }
+
+  .main-container-mobile {
+    display: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: max-content;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8em;
+  }
+
+  .main-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .banner-main {
+    width: 100vw;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+  }
+
+  .banner-main > img {
+    width: 200%;
+  }
+
+  .logo-container {
+    margin-top: -23.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    background-color: transparent;
+  }
+
+  .logo-background-mobile {
+    /* width: 300px;
+    height: 300px; */
+    position: sticky;
+    top: 100vh;
+    left: 0;
+    opacity: 0.12;
+  }
+
+  /* .img-logo-background-mobile {
+    position: sticky;
+    top: 0;
+    left: 0;
+  } */
+
+  .logo {
+    transform: scale(0.6);
+    z-index: 5;
+    /* margin-top: 0.2em; */
+  }
+
+  .content-pages {
+    margin-top: -62.5vh;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+  }
+
+  .top10-container,
+  .probono-container,
+  .story-container,
+  .team-container,
+  .testimonials-container,
+  .contact-container,
+  .experience-container {
+    width: 100%;
+    height: max-content;
+  }
+
+  .experience-container {
+    width: 100vw;
+    height: max-content;
+    z-index: 30;
+  }
+
+  .banner-experience2,
+  .banner-top10,
+  .banner-team,
+  .banner-story,
+  .banner-testimonials,
+  .banner-probono,
+  .banner-activities,
+  .banner-contact {
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-experience2 > img,
+  .banner-top10 > img,
+  .banner-team > img,
+  .banner-story > img,
+  .banner-testimonials > img,
+  .banner-probono > img,
+  .banner-activities > img,
+  .banner-contact > img {
+    width: 200%;
+  }
+
+  .text-experience-container,
+  .text-top10-container,
+  .text-team-container,
+  .text-story-container,
+  .text-testimonials-container,
+  .text-probono-container,
+  .text-activities-container,
+  .text-contact-container {
+    width: 90vw;
+    padding-left: 1em;
+    margin-top: -1.5em;
+    font-family: DIN Next LT Pro;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 5em;
+    z-index: 3;
+  }
+
+  .title-experience2,
+  .title-top10,
+  .title-team,
+  .title-story,
+  .title-testimonials,
+  .title-probono,
+  .title-activities,
+  .title-contact {
+    font-weight: 400;
+    text-shadow: 0 3px 5px hsla(0, 0%, 0%, 0.7);
+  }
+
+  .experience-list {
+    gap: 1em;
+  }
+
+  .burger-container {
+    visibility: visible;
+    position: fixed;
+    top: 0.3em;
+    left: 0.3em;
+    z-index: 80;
+  }
+
+  /* .banner-experience > img {
+    width: 200%;
+  } */
+
+  /* .text-container {
+    position: absolute;
+    top: calc(100vh+20px);
+  } */
+
+  .logo-background {
+    top: 100vh;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nav2 {
+    visibility: visible;
+    width: 100vw;
+    z-index: 65;
+    font-family: 'DIN Next LT Pro';
+    position: fixed;
+    top: 5px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-list2 {
+    width: 90%;
+    padding: 2em 1.5em 2em 1.5em;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+    /* gap: 0.2em; */
+  }
+
+  .nav-list2 li {
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 0.3em;
+    padding: 0.2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+
+  .nav-list2 li:hover {
+    background-color: var(--YELLOW);
+  }
+
+  .nav-btn2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.8em; */
+  }
+
+  .line-nav2 {
+    width: 100%;
+    background-color: hsl(0, 0%, 48%);
+    height: 1px;
+  }
+
+  .active-link {
+    height: 2px;
+    margin-top: 0;
+  }
+
+  .language-search-container {
+    /* position: absolute; */
+    top: 100vh;
+    /* margin-top: 12em; */
+    left: 0;
+  }
+
+  .menu {
+    position: fixed;
+    top: 4em;
+    margin-left: 1em;
+    height: 70vh;
+    z-index: 64;
   }
 }

@@ -3,7 +3,8 @@ nav {
   padding-right: 2em;
   font-family: 'DIN Next LT Pro';
   position: absolute;
-  top: 530px;
+  top: 570px;
+  z-index: 5;
 }
 
 .nav-list {
@@ -35,7 +36,6 @@ nav {
 .nav-btn {
   width: 100%;
   display: flex;
-  /* gap: 1em; */
 }
 
 .contact-btn {
@@ -51,10 +51,16 @@ nav {
   height: 18px;
   background-color: var(--YELLOW);
   margin-top: 0.2em;
-  /* opacity: 0; */
 }
 
 li:hover .active-link {
   opacity: 1;
   transition: all 0.7s ease-in-out;
+}
+
+.nav2 {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

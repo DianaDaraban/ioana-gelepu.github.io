@@ -68,6 +68,12 @@ const experienceData = [
         'derivate din contractul-cadru care reglementează condițiile acordării asistenței medicale în cadrul sistemului de asigurări sociale de sănătate',
 
       text11: 'cereri de suspendare a actului administrativ',
+    },
+  },
+  {
+    id: 12,
+    description: 'proceduri administrative',
+    text: {
       text12:
         'în fața Consiliului Român pentru Publicitate, ca procedură de consultare înainte de emiterea unui act de către Consiliul Național al Audiovizualului',
       text13:
@@ -77,6 +83,12 @@ const experienceData = [
       text15:
         'cu ocazia controalelor Curții de Conturi în legătură cu entități private care au utilizat bani publici',
       text16: 'în fața Consiliului Național pentru Combaterea Discriminării',
+    },
+  },
+  {
+    id: 13,
+    description: 'litigii fiscale',
+    text: {
       text17: 'privind contestarea stabilirii impozitului suplimentar pe proﬁt',
       text18: 'recunoașterea dreptului de deducere a TVA',
       text19: 'contestarea impozitului datorat pentru anumite clădiri',
@@ -84,48 +96,128 @@ const experienceData = [
         'contestarea debitelor impuse de Administrația Fondului pentru Mediu',
       text21:
         'înregistrarea din punct de vedere ﬁscal a unui consorțiu, ca efect al schimbării situației juridice constând într-o operațiune de fuziune transfrontalieră',
+    },
+  },
+  {
+    id: 14,
+    description:
+      'achiziții publice și proceduri conexe privind suspendarea scrisorilor de garanție bancară',
+    text: {
       text22: 'vizând anularea unor acte emise în procedurile de achiziție',
       text23:
         'legate de executarea obligațiilor izvorâte din contracte de achiziție',
       text24:
         'privind  executarea obligațiilor din contractul de delegare a gestiunii prin concesiune a serviciilor publice de salubritate',
-      text25: 'vizând anularea sau executarea unor acte civile',
-      text26: 'privind recunoașterea dreptului de proprietate',
-      text27:
-        'acțiuni confesorii legate de apărarea sau recunoașterea dreptului de servitute, superﬁcie, uz sau de uzufruct',
-      text28: 'vizând obligarea la încheierea de contracte ',
-      text29:
-        'privind răspunderea civilă delictuală (inclusiv pentru fapta lucrului, a unui prepus sau afectarea dreptului la imagine)',
-      text30: 'bazate pe plata nedatorată sau îmbogățirea fără justă cauză',
-      text31: 'acțiuni posesorii',
-      text32: 'evacuări',
-      text33: 'privind demolarea unei construcții',
-      text34: 'plângeri de carte Funciară',
-      text35: 'contestații la executare',
-      text36:
-        'contestații împotriva refuzului executorului de a realiza un act de executare',
-      text37:
-        'contestații privind lămurirea, înțelesului, întinderii sau aplicării titlului executoriu',
-      text38:
-        'litigii privind daunele datorate ca efect al neexecutării unei obligații de a face sau de a nu face cu caracter strict personal',
-      text39:
-        'litigii privind acordarea de accesorii care se cuvin de drept creditorului',
-      text40: 'apel împotriva încheierii de respingere a încuviințării silite',
-      text41: 'anularea unor brevete de invenție',
-      text42: 'anularea unor certiﬁcate de atestare a realizărilor tehnice',
-      text43: 'obligarea la încetarea folosirii unei mărci',
-      text44: 'plata de despăgubiri pentru folosirea ilicită a mărcii',
-      text45: 'protecția drepturilor de autor',
-      text46:
-        'în fața curților de arbitraj de pe lângă Camerele de Comerț și Industrie',
-      text47:
-        'în fața Casei Naționale de Sănătate (izvorâte din raporturile furnizorilor de servicii medicale cu casele de asigurări)',
-      text48:
-        'procedura de contestare a hotărârilor arbitrale în fața instanțelor de drept comun',
-
-      text49:
-        'în fața TAS, ca urmare a retragerii licenței clubului şi retrogradării',
     },
+  },
+  {
+    id: 15,
+    description:
+      'privind contestarea deciziilor de concediere pentru motive neimputabile (ca urmare a restructurării individuale sau colective, precum și în situația salariatului devenit inapt din punct de vedere medical)',
+  },
+  {
+    id: 16,
+    description:
+      'vizând contestarea deciziilor de concediere pentru motive imputabile',
+  },
+  {
+    id: 17,
+    description: 'având ca obiect încadrarea în grupe de muncă',
+  },
+  {
+    id: 18,
+    description: 'legate de despăgubiri ',
+  },
+  {
+    id: 19,
+    description:
+      'tinzând la acordarea contravalorii orelor suplimentare sau a altor drepturi salariale',
+  },
+  {
+    id: 20,
+    description: 'în materia hărțuirii',
+  },
+  {
+    id: 21,
+    description: 'derivând din contracte de muncă cu termen limitat',
+  },
+  {
+    id: 21,
+    description:
+      'privind recalificarea unor contracte civile ca și contracte de muncă',
+  },
+  {
+    id: 22,
+    description: 'legate de executarea contractelor colective de muncă ',
+  },
+  {
+    id: 23,
+    description:
+      'vizând anularea demisiei sau a acordului de încetare a contractului individual de muncă, fiind invocată vicierea consimțământului',
+  },
+  {
+    id: 24,
+    description:
+      'acțiuni de regres ca urmare a unor controale derulate de Curtea de Conturi',
+  },
+  {
+    id: 25,
+    description: 'vizând anularea sau executarea unor acte civile',
+  },
+  {
+    id: 26,
+    description: 'privind recunoașterea dreptului de proprietate',
+  },
+  {
+    id: 27,
+    description:
+      'acțiuni confesorii legate de apărarea dreptului de servitute, superficie, uz sau de uzufruct',
+  },
+  {
+    id: 28,
+    description: 'vizând obligarea la încheierea de contracte ',
+  },
+  {
+    id: 29,
+    description:
+      'privind răspunderea civilă delictuală (inclusiv pentru fapta lucrului, a unui prepus sau afectarea dreptului la imagine)',
+  },
+  {
+    id: 30,
+    description: 'bazate pe plata nedatorată sau îmbogățirea fără justă cauză',
+  },
+  {
+    id: 31,
+    description: '•	acțiuni posesorii',
+  },
+  {
+    id: 32,
+    description: 'obligarea la încetarea folosirii unei mărci',
+  },
+  {
+    id: 33,
+    description: 'plata de despăgubiri pentru folosirea ilicită a mărcii',
+  },
+  {
+    id: 34,
+    description: 'protecția drepturilor de autor',
+  },
+  {
+    id: 35,
+    description: 'evacuări',
+  },
+  {
+    id: 36,
+    description: 'privind demolarea unei construcții',
+  },
+  {
+    id: 37,
+    description: 'plângeri de carte Funciară',
+  },
+  {
+    id: 38,
+    description:
+      'în fața TAS, ca urmare a retragerii licenței clubului şi retrogradării',
   },
 ]
 

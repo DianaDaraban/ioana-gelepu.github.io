@@ -4,7 +4,7 @@ import logo from '../assets/logo-01.png'
 import banner from '../assets/banner_experience-01.jpg'
 import experienceData from '../data/experienceData'
 
-export default function Experienta() {
+export default function ExperienceMobile() {
   const [bannerOpacity, setBannerOpacity] = useState(0)
   const opacityChange = () => {
     setTimeout(() => {
@@ -12,7 +12,6 @@ export default function Experienta() {
     }, 100)
   }
   const experienceDescription = experienceData.map((item) => {
-    console.log(item)
     return (
       <li>
         <div className="circle-text">
@@ -37,21 +36,17 @@ export default function Experienta() {
   })
 
   return (
-    <div className="experience-container">
-      <div className="logo-container">
-        <div className="logo">
-          <img src={logo} alt="logo" />
-        </div>
-        <div
-          className="banner-experience"
-          style={{ opacity: bannerOpacity, transition: 'all 1s ease-in' }}
-          onLoad={opacityChange}
-        >
-          <img src={banner} alt="banner-experience" />
-        </div>
+    <div className="experience-container" id="experience">
+      <div
+        className="banner-experience2"
+        style={{ opacity: bannerOpacity, transition: 'all 1s ease-in' }}
+        onLoad={opacityChange}
+      >
+        <img src={banner} alt="banner-experience" />
       </div>
-      <div className="text-container">
-        <h2 className="title-experience">Experiența. Domenii de activitate</h2>
+
+      <div className="text-experience-container">
+        <h2 className="title-experience2">Experiența. Domenii de activitate</h2>
         <div className="line-experience"></div>
         <div className="text-description-container">
           <h3 className="text-description-title">Litigii comerciale</h3>

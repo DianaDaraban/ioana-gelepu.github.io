@@ -4,7 +4,7 @@ import logo from '../assets/logo-01.png'
 import banner from '../assets/banner_top10-01.jpg'
 import top10Data from '../data/top10Data'
 
-export default function Top10() {
+export default function Top10Mobile() {
   const [bannerOpacity, setBannerOpacity] = useState(0)
   const opacityChange = () => {
     setTimeout(() => {
@@ -22,21 +22,17 @@ export default function Top10() {
     )
   })
   return (
-    <div className="experience-container">
-      <div className="logo-container">
-        <div className="logo">
-          <img src={logo} alt="logo" />
-        </div>
-        <div
-          className="banner-experience"
-          style={{ opacity: bannerOpacity, transition: 'all 1s ease-in' }}
-          onLoad={opacityChange}
-        >
-          <img src={banner} alt="banner-experience" />
-        </div>
+    <div className="top10-container" id="top10">
+      <div
+        className="banner-top10"
+        style={{ opacity: bannerOpacity, transition: 'all 1s ease-in' }}
+        onLoad={opacityChange}
+      >
+        <img src={banner} alt="banner-top10" />
       </div>
-      <div className="text-container">
-        <h2 className="title-experience">
+
+      <div className="text-top10-container" style={{ color: 'white' }}>
+        <h2 className="title-top10">
           Top 10 proiecte relevante gestionate de avocatul titular
         </h2>
         <div className="line-experience"></div>

@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import '../styles/navigation.css'
 import BurgerMenu from './BurgerMenu'
+import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
-export default function Navigation() {
+export default function NavigationMobile() {
   const [opacityNumExp, setOpacityNumExp] = useState(1)
   const [opacityNumTop, setOpacityNumTop] = useState(0)
   const [opacityNumTeam, setOpacityNumTeam] = useState(0)
@@ -12,6 +13,30 @@ export default function Navigation() {
   const [opacityNumProbono, setOpacityNumProbono] = useState(0)
   const [opacityNumAct, setOpacityNumAct] = useState(0)
   const [opacityNumContact, setOpacityNumContact] = useState(0)
+  const [isClicked, setIsClicked] = useState(true)
+  const [hiddenClass, setHiddenClass] = useState('hidden')
+  const [burger, setBurger] = useState('burger-bar unclicked')
+  const [menu, setMenu] = useState('menu hidden')
+
+  const verifyClick = (item) => {
+    setIsClicked(item)
+    if (isClicked) {
+      setHiddenClass('visible')
+    } else {
+      setHiddenClass('hidden')
+    }
+  }
+
+  const toggleMenu = () => {
+    setHiddenClass('hidden')
+    if (burger == 'burger-bar clicked') {
+      setBurger('burger-bar unclicked')
+    }
+    if (menu == 'menu visible') {
+      setMenu('menu hidden')
+    }
+  }
+
   const opacityChangeExp = () => {
     setOpacityNumExp(1)
     setOpacityNumTop(0)
@@ -94,26 +119,35 @@ export default function Navigation() {
   }
   return (
     <>
-      <nav>
-        <ul className="nav-list">
-          <div className="nav-btn experience-btn">
-            <div className="line-nav"></div>
+      <BurgerMenu
+        verifyClick={verifyClick}
+        toggleMenu={toggleMenu}
+        burger={burger}
+        menu={menu}
+      />
+      <div
+        className="nav2"
+        style={{
+          visibility: hiddenClass,
+        }}
+      >
+        <ul className="nav-list2">
+          <div className="nav-btn2 experience-btn2">
+            <div className="line-nav2"></div>
             <li>
-              <Link
-                to="/"
-                onClick={opacityChangeExp}
+              <HashLink
+                to="ExperienceMobile.jsx/#experience"
+                onClick={() => {
+                  opacityChangeExp()
+                  toggleMenu()
+                }}
                 style={{
-                  color: 'white',
+                  color: 'black',
                   textDecoration: 'none',
                   fontWeight: 300,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  width: '100%',
                 }}
               >
-                Experiență
-                <span className="nav-subText">Domenii de activitate</span>
+                Experiență. Domenii de activitate
                 {opacityNumTop == 0 &&
                   opacityNumTeam == 0 &&
                   opacityNumStory == 0 &&
@@ -122,32 +156,30 @@ export default function Navigation() {
                   opacityNumAct == 0 &&
                   opacityNumContact == 0 && (
                     <div
-                      className="active-link"
+                      className="active-link2"
                       style={{ opacity: opacityNumExp }}
                     ></div>
                   )}
-              </Link>
+              </HashLink>
             </li>
           </div>
-          <div className="nav-btn top10-btn">
-            <div className="line-nav"></div>
+          <div className="nav-btn2 top10-btn2">
+            <div className="line-nav2"></div>
             <li>
-              <Link
-                to="/top10"
-                onClick={opacityChangeTop}
+              <HashLink
+                to="Top10Mobile.jsx/#top10"
+                onClick={() => {
+                  opacityChangeTop()
+                  toggleMenu()
+                }}
                 style={{
-                  color: 'white',
+                  color: 'black',
                   textDecoration: 'none',
                   fontWeight: 300,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  width: '100%',
                 }}
               >
-                Top 10
-                <span className="nav-subText">proiecte relevante</span>
-              </Link>
+                Top 10 proiecte relevante
+              </HashLink>
               {opacityNumExp == 0 &&
                 opacityNumTeam == 0 &&
                 opacityNumStory == 0 &&
@@ -156,30 +188,29 @@ export default function Navigation() {
                 opacityNumAct == 0 &&
                 opacityNumContact == 0 && (
                   <div
-                    className="active-link"
+                    className="active-link2"
                     style={{ opacity: opacityNumTop }}
                   ></div>
                 )}
             </li>
           </div>
-          <div className="nav-btn team-btn">
-            <div className="line-nav"></div>
+          <div className="nav-btn2 team-btn2">
+            <div className="line-nav2"></div>
             <li>
-              <Link
-                to="/echipa"
-                onClick={opacityChangeTeam}
+              <HashLink
+                to="TeamMobile.jsx/#team"
+                onClick={() => {
+                  opacityChangeTeam()
+                  toggleMenu()
+                }}
                 style={{
-                  color: 'white',
+                  color: 'black',
                   textDecoration: 'none',
                   fontWeight: 300,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  width: '100%',
                 }}
               >
                 Echipa
-              </Link>
+              </HashLink>
               {opacityNumTop == 0 &&
                 opacityNumExp == 0 &&
                 opacityNumStory == 0 &&
@@ -188,30 +219,29 @@ export default function Navigation() {
                 opacityNumAct == 0 &&
                 opacityNumContact == 0 && (
                   <div
-                    className="active-link"
+                    className="active-link2"
                     style={{ marginTop: '.8em', opacity: opacityNumTeam }}
                   ></div>
                 )}
             </li>
           </div>
-          <div className="nav-btn story-btn">
-            <div className="line-nav"></div>
+          <div className="nav-btn2 story-btn2">
+            <div className="line-nav2"></div>
             <li>
-              <Link
-                to="/povestea"
-                onClick={opacityChangeStory}
+              <HashLink
+                to="StoryMobile.jsx/#story"
+                onClick={() => {
+                  opacityChangeStory()
+                  toggleMenu()
+                }}
                 style={{
-                  color: 'white',
+                  color: 'black',
                   textDecoration: 'none',
                   fontWeight: 300,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  width: '100%',
                 }}
               >
                 Povestea
-              </Link>
+              </HashLink>
               {opacityNumTop == 0 &&
                 opacityNumTeam == 0 &&
                 opacityNumExp == 0 &&
@@ -220,30 +250,29 @@ export default function Navigation() {
                 opacityNumAct == 0 &&
                 opacityNumContact == 0 && (
                   <div
-                    className="active-link"
+                    className="active-link2"
                     style={{ marginTop: '.8em', opacity: opacityNumStory }}
                   ></div>
                 )}
             </li>
           </div>
-          <div className="nav-btn testimonials-btn">
-            <div className="line-nav"></div>
+          <div className="nav-btn2 testimonials-btn2">
+            <div className="line-nav2"></div>
             <li>
-              <Link
-                to="/testimoniale"
-                onClick={opacityChangeTestimonials}
+              <HashLink
+                to="TestimonialsMobile.jsx/#testimonials"
+                onClick={() => {
+                  opacityChangeTestimonials()
+                  toggleMenu()
+                }}
                 style={{
-                  color: 'white',
+                  color: 'black',
                   textDecoration: 'none',
                   fontWeight: 300,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  width: '100%',
                 }}
               >
                 Testimoniale
-              </Link>
+              </HashLink>
               {opacityNumTop == 0 &&
                 opacityNumTeam == 0 &&
                 opacityNumStory == 0 &&
@@ -252,7 +281,7 @@ export default function Navigation() {
                 opacityNumAct == 0 &&
                 opacityNumContact == 0 && (
                   <div
-                    className="active-link"
+                    className="active-link2"
                     style={{
                       marginTop: '.8em',
                       opacity: opacityNumTestimonials,
@@ -261,24 +290,23 @@ export default function Navigation() {
                 )}
             </li>
           </div>
-          <div className="nav-btn proBono-btn">
-            <div className="line-nav"></div>
+          <div className="nav-btn2 proBono-btn2">
+            <div className="line-nav2"></div>
             <li>
-              <Link
-                to="/probono"
-                onClick={opacityChangeProbono}
+              <HashLink
+                to="ProbonoMobile.jsx/#probono"
+                onClick={() => {
+                  opacityChangeProbono()
+                  toggleMenu()
+                }}
                 style={{
-                  color: 'white',
+                  color: 'black',
                   textDecoration: 'none',
                   fontWeight: 300,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  width: '100%',
                 }}
               >
                 Pro bono
-              </Link>
+              </HashLink>
               {opacityNumTop == 0 &&
                 opacityNumTeam == 0 &&
                 opacityNumStory == 0 &&
@@ -287,31 +315,29 @@ export default function Navigation() {
                 opacityNumAct == 0 &&
                 opacityNumContact == 0 && (
                   <div
-                    className="active-link"
+                    className="active-link2"
                     style={{ marginTop: '.8em', opacity: opacityNumProbono }}
                   ></div>
                 )}
             </li>
           </div>
-          <div className="nav-btn activities-btn">
-            <div className="line-nav"></div>
+          <div className="nav-btn2 activities-btn2">
+            <div className="line-nav2"></div>
             <li>
-              <Link
-                to="/activitati"
-                onClick={opacityChangeAct}
+              <HashLink
+                to="ActivitiesMobile.jsx/#activities"
+                onClick={() => {
+                  opacityChangeAct()
+                  toggleMenu()
+                }}
                 style={{
-                  color: 'white',
+                  color: 'black',
                   textDecoration: 'none',
                   fontWeight: 300,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  width: '100%',
                 }}
               >
-                Activități
-                <span className="nav-subText">notabile recente</span>
-              </Link>
+                Activități notabile recente
+              </HashLink>
               {opacityNumTop == 0 &&
                 opacityNumTeam == 0 &&
                 opacityNumStory == 0 &&
@@ -320,30 +346,29 @@ export default function Navigation() {
                 opacityNumExp == 0 &&
                 opacityNumContact == 0 && (
                   <div
-                    className="active-link"
+                    className="active-link2"
                     style={{ opacity: opacityNumAct }}
                   ></div>
                 )}
             </li>
           </div>
-          <div className="nav-btn contact-btn">
-            <div className="line-nav"></div>
+          <div className="nav-btn2 contact-btn2">
+            <div className="line-nav2"></div>
             <li>
-              <Link
-                to="/contact"
-                onClick={opacityChangeContact}
+              <HashLink
+                to="ContactMobile.jsx/#contact"
+                onClick={() => {
+                  opacityChangeContact()
+                  toggleMenu()
+                }}
                 style={{
-                  color: 'white',
+                  color: 'black',
                   textDecoration: 'none',
                   fontWeight: 300,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  width: '100%',
                 }}
               >
                 Contact
-              </Link>
+              </HashLink>
               {opacityNumTop == 0 &&
                 opacityNumTeam == 0 &&
                 opacityNumStory == 0 &&
@@ -352,15 +377,15 @@ export default function Navigation() {
                 opacityNumAct == 0 &&
                 opacityNumExp == 0 && (
                   <div
-                    className="active-link"
+                    className="active-link2"
                     style={{ marginTop: '.8em', opacity: opacityNumContact }}
                   ></div>
                 )}
             </li>
-            <div className="line-nav"></div>
+            <div className="line-nav2"></div>
           </div>
         </ul>
-      </nav>
+      </div>
     </>
   )
 }

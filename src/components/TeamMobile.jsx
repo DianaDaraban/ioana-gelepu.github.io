@@ -4,7 +4,7 @@ import logo from '../assets/logo-01.png'
 import banner from '../assets/banner_echipa-01.jpg'
 import teamData from '../data/teamData'
 
-export default function Echipa() {
+export default function TeamMobile() {
   const [bannerOpacity, setBannerOpacity] = useState(0)
   const opacityChange = () => {
     setTimeout(() => {
@@ -33,31 +33,33 @@ export default function Echipa() {
   })
 
   return (
-    <div className="experience-container">
-      <div className="logo-container">
-        <div className="logo">
-          <img src={logo} alt="logo" />
-        </div>
-        <div
-          className="banner-experience"
-          style={{ opacity: bannerOpacity, transition: 'all 1s ease-in' }}
-          onLoad={opacityChange}
-        >
-          <img src={banner} alt="banner-experience" />
-        </div>
+    <div className="team-container" id="team">
+      <div
+        className="banner-team"
+        style={{ opacity: bannerOpacity, transition: 'all 1s ease-in' }}
+        onLoad={opacityChange}
+      >
+        <img src={banner} alt="banner-experience" />
       </div>
-      <div className="text-container">
-        <h2 className="title-experience">Echipa</h2>
+
+      <div className="text-team-container">
+        <h2 className="title-team" style={{ color: 'white' }}>
+          Echipa
+        </h2>
         <div className="line-experience"></div>
         <div className="text-description-container">
           <h3 className="text-description-title">{teamData[0][0].fullName}</h3>
-          <ul className="experience-list">{teamDescription}</ul>
+          <ul className="experience-list" style={{ color: 'white' }}>
+            {teamDescription}
+          </ul>
         </div>
         <div className="text-description-container">
           <h3 className="text-description-title camelia">
             {teamData[1][0].fullName}
           </h3>
-          <ul className="experience-list">{teamDescription2}</ul>
+          <ul className="experience-list" style={{ color: 'white' }}>
+            {teamDescription2}
+          </ul>
         </div>
       </div>
     </div>

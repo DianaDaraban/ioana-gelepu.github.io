@@ -4,7 +4,7 @@ import logo from '../assets/logo-01.png'
 import banner from '../assets/banner_echipa-01.jpg'
 import storyData from '../data/storyData'
 
-export default function Povestea() {
+export default function StoryMobile() {
   const [bannerOpacity, setBannerOpacity] = useState(0)
   const opacityChange = () => {
     setTimeout(() => {
@@ -33,21 +33,19 @@ export default function Povestea() {
   })
 
   return (
-    <div className="experience-container">
-      <div className="logo-container">
-        <div className="logo">
-          <img src={logo} alt="logo" />
-        </div>
-        <div
-          className="banner-experience"
-          style={{ opacity: bannerOpacity, transition: 'all 1s ease-in' }}
-          onLoad={opacityChange}
-        >
-          <img src={banner} alt="banner-experience" />
-        </div>
+    <div className="story-container" id="story">
+      <div
+        className="banner-story"
+        style={{ opacity: bannerOpacity, transition: 'all 1s ease-in' }}
+        onLoad={opacityChange}
+      >
+        <img src={banner} alt="banner-story" />
       </div>
-      <div className="text-container">
-        <h2 className="title-experience">Povestea</h2>
+
+      <div className="text-story-container">
+        <h2 className="title-story" style={{ color: 'white' }}>
+          Povestea
+        </h2>
         <div className="line-experience"></div>
         <div className="text-description-container">
           <h3 className="text-description-title">
@@ -56,10 +54,14 @@ export default function Povestea() {
           <h3 className="text-description-title">
             Care este povestea acestui cabinet?
           </h3>
-          <ul className="experience-list">{storyDescription}</ul>
+          <ul className="experience-list" style={{ color: 'white' }}>
+            {storyDescription}
+          </ul>
         </div>
         <h3 className="text-description-title">Ce ne propunem să oferim?</h3>
-        <ul className="experience-list">{storyDescription2}</ul>
+        <ul className="experience-list" style={{ color: 'white' }}>
+          {storyDescription2}
+        </ul>
       </div>
     </div>
   )

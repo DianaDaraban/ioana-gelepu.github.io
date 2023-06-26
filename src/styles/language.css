@@ -1,0 +1,67 @@
+.language-search-container {
+  width: 71.8vw;
+  padding-right: 2em;
+  font-family: 'DIN Next LT Pro';
+  position: absolute;
+  top: 510px;
+  right: 0;
+  z-index: 6;
+  display: flex;
+}
+
+.english-btn,
+.romanian-btn {
+  width: 1.6em;
+  height: 1.6em;
+  background-color: transparent;
+  border: 1px solid var(--YELLOW);
+  font-family: 'DIN Next LT Pro';
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 100;
+  padding: 0.1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.romanian-btn {
+  margin-left: 0.3em;
+  background-color: var(--YELLOW);
+  color: black;
+  font-weight: 400;
+}
+
+.search-container {
+  width: 505px;
+  margin-left: auto;
+  height: max-content;
+  border: 1px solid var(--YELLOW);
+  border-radius: 1em;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  font-family: 'DIN Next LT Pro';
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 100;
+  padding: 0.1em;
+  margin-left: 0.5em;
+  background-color: transparent;
+  border: none;
+}
+
+.search-btn {
+  width: 2em;
+  height: 2em;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+  cursor: pointer;
+}
