@@ -3,6 +3,7 @@ import '../styles/experienta.css'
 import logo from '../assets/logo-01.png'
 import banner from '../assets/banner_echipa-01.jpg'
 import teamData from '../data/teamData'
+import ioana from '../assets/ioana.png'
 
 export default function Echipa() {
   const [bannerOpacity, setBannerOpacity] = useState(0)
@@ -46,6 +47,7 @@ export default function Echipa() {
           <img src={banner} alt="banner-experience" />
         </div>
       </div>
+
       <div className="text-container">
         <h2 className="title-experience">Echipa</h2>
         <div className="line-experience"></div>

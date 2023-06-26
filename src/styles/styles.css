@@ -83,7 +83,6 @@
 
 .contact-list li:first-child div:nth-child(2) {
   width: max-content;
-  border-bottom: solid 1px #085cf2;
 }
 
 .main-container-mobile {
