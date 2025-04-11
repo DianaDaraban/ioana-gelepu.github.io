@@ -1,25 +1,25 @@
 @font-face {
   font-family: 'DIN Next LT Pro';
-  src: url('DINNextLTPro-LightCondensed.eot');
+  src: url('../../public/fonts/DINNextLTPro-LightCondensed.eot');
   src: local('DIN Next LT Pro Light Condensed'),
     local('DINNextLTPro-LightCondensed'),
-    url('DINNextLTPro-LightCondensed.eot?#iefix') format('embedded-opentype'),
-    url('DINNextLTPro-LightCondensed.woff2') format('opentype'),
-    url('DINNextLTPro-LightCondensed.woff') format('opentype'),
-    url('DINNextLTPro-LightCondensed.ttf') format('truetype');
+    url('../../public/fonts/DINNextLTPro-LightCondensed.eot?#iefix') format('embedded-opentype'),
+    url('../../public/fonts/DINNextLTPro-LightCondensed.woff2') format('opentype'),
+    url('../../public/fonts/DINNextLTPro-LightCondensed.woff') format('opentype'),
+    url('../../public/fonts/DINNextLTPro-LightCondensed.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'DIN Next LT Pro';
-  src: url('DINNextLTPro-MediumCond.eot');
+  src: url('../../public/fonts/DINNextLTPro-MediumCond.eot');
   src: local('DIN Next LT Pro Medium Condensed'),
     local('DINNextLTPro-MediumCond'),
-    url('DINNextLTPro-MediumCond.eot?#iefix') format('embedded-opentype'),
-    url('DINNextLTPro-MediumCond.woff2') format('opentype'),
-    url('DINNextLTPro-MediumCond.woff') format('opentype'),
-    url('DINNextLTPro-MediumCond.ttf') format('truetype');
+    url('../../public/fonts/DINNextLTPro-MediumCond.eot?#iefix') format('embedded-opentype'),
+    url('../../public/fonts/DINNextLTPro-MediumCond.woff2') format('opentype'),
+    url('../../public/fonts/DINNextLTPro-MediumCond.woff') format('opentype'),
+    url('../../public/fonts/DINNextLTPro-MediumCond.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -69,7 +69,7 @@
   font-size: 1.55rem;
 }
 
-.contact-list > li {
+.contact-list>li {
   display: flex;
   justify-content: start;
   align-items: start;
