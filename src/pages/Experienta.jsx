@@ -22,7 +22,6 @@ export default function Experienta() {
     )
   })
   const experienceDescription2 = experienceData[1].map((item) => {
-    console.log(item.description)
     return (
       <li>
         <div className="circle-text">

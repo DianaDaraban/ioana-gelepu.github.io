@@ -136,7 +136,7 @@ export default function NavigationMobile() {
             <div className="line-nav2"></div>
             <li>
               <HashLink
-                to="ExperienceMobile.jsx/#experience"
+                to="/#experience"
                 onClick={() => {
                   opacityChangeExp()
                   toggleMenu()
@@ -167,7 +167,7 @@ export default function NavigationMobile() {
             <div className="line-nav2"></div>
             <li>
               <HashLink
-                to="Top10Mobile.jsx/#top10"
+                to="/#top10"
                 onClick={() => {
                   opacityChangeTop()
                   toggleMenu()
@@ -198,7 +198,7 @@ export default function NavigationMobile() {
             <div className="line-nav2"></div>
             <li>
               <HashLink
-                to="TeamMobile.jsx/#team"
+                to="/#team"
                 onClick={() => {
                   opacityChangeTeam()
                   toggleMenu()
@@ -229,7 +229,7 @@ export default function NavigationMobile() {
             <div className="line-nav2"></div>
             <li>
               <HashLink
-                to="StoryMobile.jsx/#story"
+                to="/#story"
                 onClick={() => {
                   opacityChangeStory()
                   toggleMenu()
@@ -260,7 +260,7 @@ export default function NavigationMobile() {
             <div className="line-nav2"></div>
             <li>
               <HashLink
-                to="TestimonialsMobile.jsx/#testimonials"
+                to="/#testimonials"
                 onClick={() => {
                   opacityChangeTestimonials()
                   toggleMenu()
@@ -294,7 +294,7 @@ export default function NavigationMobile() {
             <div className="line-nav2"></div>
             <li>
               <HashLink
-                to="ProbonoMobile.jsx/#probono"
+                to="/#probono"
                 onClick={() => {
                   opacityChangeProbono()
                   toggleMenu()
@@ -321,42 +321,12 @@ export default function NavigationMobile() {
                 )}
             </li>
           </div>
-          <div className="nav-btn2 activities-btn2">
-            <div className="line-nav2"></div>
-            <li>
-              <HashLink
-                to="ActivitiesMobile.jsx/#activities"
-                onClick={() => {
-                  opacityChangeAct()
-                  toggleMenu()
-                }}
-                style={{
-                  color: 'black',
-                  textDecoration: 'none',
-                  fontWeight: 300,
-                }}
-              >
-                Activități notabile recente
-              </HashLink>
-              {opacityNumTop == 0 &&
-                opacityNumTeam == 0 &&
-                opacityNumStory == 0 &&
-                opacityNumTestimonials == 0 &&
-                opacityNumProbono == 0 &&
-                opacityNumExp == 0 &&
-                opacityNumContact == 0 && (
-                  <div
-                    className="active-link2"
-                    style={{ opacity: opacityNumAct }}
-                  ></div>
-                )}
-            </li>
-          </div>
+          {/* Activități hidden until it has real content (it only had placeholder text) */}
           <div className="nav-btn2 contact-btn2">
             <div className="line-nav2"></div>
             <li>
               <HashLink
-                to="ContactMobile.jsx/#contact"
+                to="/#contact"
                 onClick={() => {
                   opacityChangeContact()
                   toggleMenu()

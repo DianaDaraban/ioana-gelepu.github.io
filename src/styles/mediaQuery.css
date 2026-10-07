@@ -40,17 +40,6 @@
     top: 450px;
     width: 570px;
   }
-
-  .language-search-container {
-    top: 410px;
-  }
-
-  .english-btn,
-  .romanian-btn {
-    width: 1.3em;
-    height: 1.3em;
-    font-size: 1.4rem;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -60,10 +49,6 @@
   .text-container {
     margin-top: 10em;
     margin-left: 25em;
-  }
-
-  .language-search-container {
-    top: 380px;
   }
   .title-experience {
     font-size: 2.1rem;
@@ -130,29 +115,6 @@
     width: 490px;
   }
 
-  .language-search-container {
-    top: 330px;
-  }
-
-  .english-btn,
-  .romanian-btn {
-    width: 1.3em;
-    height: 1.3em;
-    font-size: 1.2rem;
-  }
-
-  .search-container {
-    width: 320px;
-  }
-  .search-input {
-    font-size: 1.2rem;
-  }
-
-  .search-btn {
-    width: 1.5em;
-    height: 1.5em;
-  }
-
   .title-experience {
     font-size: 1.7rem;
   }
@@ -181,10 +143,6 @@
   .logo-background {
     top: 360px;
     width: 460px;
-  }
-
-  .language-search-container {
-    top: 300px;
   }
 }
 
@@ -228,35 +186,9 @@
     top: 330px;
     width: 420px;
   }
-
-  .language-search-container {
-    top: 275px;
-  }
-
-  .english-btn,
-  .romanian-btn {
-    width: 1.4em;
-    height: 1.4em;
-    font-size: 1rem;
-  }
-
-  .search-container {
-    width: 270px;
-  }
-  .search-input {
-    font-size: 1rem;
-  }
-
-  .search-btn {
-    width: 1.4em;
-    height: 1.4em;
-  }
 }
 
 @media screen and (max-width: 980px) {
-  .language-search-container {
-    top: 255px;
-  }
   nav {
     top: 285px;
   }
@@ -397,28 +329,6 @@
   .active-link {
     height: 2px;
     margin-top: 0;
-  }
-
-  .language-search-container {
-    /* position: absolute; */
-    top: 100vh;
-    margin-top: 4em;
-    margin-right: 1em;
-    right: 0;
-  }
-
-  .search-container {
-    order: 1;
-  }
-
-  .romanian-btn {
-    order: 2;
-    margin-left: 1em;
-  }
-
-  .english-btn {
-    order: 3;
-    margin-left: 0.2em;
   }
 
   .menu {
@@ -678,18 +588,19 @@
     margin-top: 0;
   }
 
-  .language-search-container {
-    /* position: absolute; */
-    top: 100vh;
-    /* margin-top: 12em; */
-    left: 0;
-  }
-
   .menu {
     position: fixed;
     top: 4em;
     margin-left: 1em;
     height: 70vh;
     z-index: 64;
+  }
+}
+
+/* Phones: left-aligned text. Justified text in a narrow column left large gaps between words. */
+@media screen and (max-width: 760px) {
+  .main-container-mobile,
+  .main-container-mobile * {
+    text-align: left;
   }
 }

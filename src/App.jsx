@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import NavigationMobile from './components/NavigationMobile'
-import Activitati from './pages/Activitati'
 import Contact from './pages/Contact'
 import Echipa from './pages/Echipa'
 import Experienta from './pages/Experienta'
@@ -16,11 +15,8 @@ import TeamMobile from './components/TeamMobile'
 import StoryMobile from './components/StoryMobile'
 import TestimonialsMobile from './components/TestimonialsMobile'
 import ProbonoMobile from './components/ProbonoMobile'
-import ActivitiesMobile from './components/ActivitiesMobile'
 import ContactMobile from './components/ContactMobile'
 import '../src/styles/styles.css'
-import Language from './components/Language'
-import '../src/styles/language.css'
 import '../src/styles/mediaQuery.css'
 import backgroundImg from './assets/logo_fundal-01.png'
 import logo from './assets/logo-01.png'
@@ -44,7 +40,6 @@ function App() {
             className="img-logo-background"
           />
         </div>
-        <Language />
         <Navigation />
 
         <Routes>
@@ -54,7 +49,6 @@ function App() {
           <Route path="/povestea" element={<Povestea />} />
           <Route path="/testimoniale" element={<Testimoniale />} />
           <Route path="/probono" element={<ProBono />} />
-          <Route path="/activitati" element={<Activitati />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
@@ -87,7 +81,6 @@ function App() {
           <StoryMobile />
           <TestimonialsMobile />
           <ProbonoMobile />
-          <ActivitiesMobile />
           <ContactMobile />
         </div>
       </div>

@@ -7,7 +7,6 @@ export default function BurgerMenu({ toggleMenu, verifyClick, menu, burger }) {
   const [isMenuClicked, setIsMenuClicked] = useState(false)
   //   toggle burger menu change
 
-  console.log(burger_class, menu_class)
 
   const updateMenu = () => {
     if (!isMenuClicked) {
