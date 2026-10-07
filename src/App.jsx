@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import NavigationMobile from './components/NavigationMobile'
 import Contact from './pages/Contact'
@@ -50,6 +50,8 @@ function App() {
           <Route path="/testimoniale" element={<Testimoniale />} />
           <Route path="/probono" element={<ProBono />} />
           <Route path="/contact" element={<Contact />} />
+          {/* Unknown or hidden pages (e.g. /activitati) go back to the start */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
       <div className="main-container-mobile">
